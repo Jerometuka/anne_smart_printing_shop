@@ -1,0 +1,66 @@
+
+body.adm-body {
+    background-color: #020617;
+    background-image: linear-gradient(rgba(2, 6, 23, .80), rgba(2, 6, 23, .94)), url('../images/admin-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.adm-header {
+    background: rgba(2, 6, 23, .72);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(51, 65, 85, .5);
+}
+
+.adm-search {
+    display: flex; align-items: center; gap: .6rem;
+    width: min(100%, 22rem);
+    padding: .5rem .9rem;
+    border-radius: .75rem;
+    background: rgba(2, 6, 23, .7);
+    border: 1px solid rgba(51, 65, 85, .7);
+    color: #94a3b8; font-size: .75rem;
+}
+.adm-search:focus-within { border-color: #f59e0b; }
+.adm-search input { flex: 1; background: transparent; outline: none; color: #e2e8f0; min-width: 0; }
+
+.adm-bell {
+    position: relative; width: 2.25rem; height: 2.25rem;
+    display: grid; place-items: center;
+    border-radius: .6rem; color: #cbd5e1;
+    background: rgba(15, 23, 42, .8); border: 1px solid rgba(51, 65, 85, .7);
+}
+.adm-bell:hover { color: #fbbf24; }
+.adm-bell-dot {
+    position: absolute; top: -.35rem; right: -.35rem;
+    min-width: 1.1rem; height: 1.1rem; padding: 0 .25rem;
+    display: grid; place-items: center;
+    border-radius: 999px; background: #f59e0b; color: #020617;
+    font-size: .6rem; font-weight: 800;
+}
+
+.adm-open { display: flex; align-items: center; gap: .5rem; font-size: .7rem; color: #cbd5e1; cursor: pointer; }
+.adm-open input { width: 1.1rem; height: 1.1rem; accent-color: #f59e0b; }
+
+.adm-user { display: flex; align-items: center; gap: .6rem; padding-left: 1.25rem; border-left: 1px solid rgba(51, 65, 85, .7); }
+.adm-avatar {
+    width: 2.25rem; height: 2.25rem; display: grid; place-items: center;
+    border-radius: 999px; font-size: .7rem; font-weight: 700; color: #fbbf24;
+    background: rgba(245, 158, 11, .12); border: 1px solid rgba(245, 158, 11, .5);
+}
+
+.adm-card {
+    background: rgba(15, 23, 42, .78);
+    border: 1px solid rgba(51, 65, 85, .6);
+    border-radius: 1rem;
+    padding: 1.25rem 1.5rem;
+    backdrop-filter: blur(6px);
+}
+.adm-label { font-size: .65rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+.adm-big { margin-top: .35rem; font-size: 2rem; line-height: 1.1; font-weight: 800; color: #fff; }
+.adm-ring { width: 3.5rem; height: 3.5rem; flex-shrink: 0; }
+.adm-chip {
+    padding: .3rem .75rem; border-radius: .5rem; font-size: .65rem; color: #cbd5e1;
+    background: rgba(2, 6, 23, .7); border: 1px solid rgba(51, 65, 85, .7);
+}

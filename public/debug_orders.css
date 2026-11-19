@@ -1,0 +1,5 @@
+body{font-family:sans-serif;background:#0f172a;color:#e2e8f0;padding:24px}
+table{border-collapse:collapse;margin:12px 0}
+td,th{border:1px solid #334155;padding:6px 10px;font-size:13px}
+.ok{color:#34d399}
+.bad{color:#f87171}
